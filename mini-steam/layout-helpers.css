@@ -1,0 +1,3 @@
+/* layout-helpers.css — вспомогательные классы */
+.m-0{margin:0}.p-0{padding:0}.mt-8{margin-top:8px}.flex-between{display:flex;justify-content:space-between;align-items:center}
+.card{background:var(--panel);padding:12px;border-radius:8px}

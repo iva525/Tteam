@@ -1,0 +1,2 @@
+/* print.css — минимальные правила для печати */
+@media print{ body{background:#fff;color:#000} .topbar, .footer, .actions, canvas{display:none} .welcome{border:0;padding:0} }

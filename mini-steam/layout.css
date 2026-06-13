@@ -1,0 +1,8 @@
+/* layout.css — helper layout utilities for the mini-steam demo */
+.container { max-width: 1200px; margin: 0 auto; }
+.grid { display: grid; gap: 12px; }
+.columns-2 { grid-template-columns: 320px 1fr; }
+.flex { display: flex; }
+.center { display:flex; align-items:center; justify-content:center; }
+.hidden-sm { display:none; }
+@media (max-width:800px){ .columns-2 { grid-template-columns: 1fr; } .hidden-sm{display:none;} }

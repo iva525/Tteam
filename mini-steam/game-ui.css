@@ -1,0 +1,4 @@
+/* game-ui.css — styles specific to in-game HUD */
+.score { font-family: monospace; color: #7be0ff; }
+.hud { position:absolute; top:12px; left:12px; padding:6px 10px; background:rgba(0,0,0,0.35); border-radius:6px }
+.toast { position:fixed; bottom:18px; right:18px; background:#111; color:#fff; padding:8px 12px; border-radius:8px }

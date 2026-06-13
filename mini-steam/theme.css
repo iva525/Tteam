@@ -1,0 +1,4 @@
+/* theme.css — alternate color theme (dark red) */
+:root{ --accent:#ff6b6b; --bg:#12090b; --panel:#1b0f11; --muted:#c7a6a6 }
+.topbar{background:linear-gradient(90deg, rgba(27,15,17,0.7), rgba(18,9,11,0.7));}
+.game-cover{background:linear-gradient(90deg,#4a0000,#8b1c1c)}

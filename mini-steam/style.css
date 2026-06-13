@@ -1,0 +1,49 @@
+:root{
+  --bg:#0b1220;
+  --panel:#11161f;
+  --accent:#1fb6ff;
+  --muted:#99a0ab;
+  --card:#0f1720;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif}
+body{
+  margin:0;background:linear-gradient(180deg,#071020 0%, #071829 100%);color:#e6eef6;
+  min-height:100vh;display:flex;flex-direction:column;
+}
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;padding:12px 20px;
+  background:rgba(6,10,16,0.6);backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.topbar h1{margin:0;font-size:18px;letter-spacing:0.5px}
+.topbar nav{display:flex;gap:6px}
+.nav-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:6px}
+.nav-btn.active{color:var(--accent);border-color:rgba(31,182,255,0.18)}
+
+.container{display:flex;gap:20px;padding:20px;flex:1}
+.sidebar{width:320px}
+.game-card{background:var(--panel);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:12px}
+.game-card.selected{box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.game-cover{width:90px;height:60px;background:linear-gradient(90deg,#123 10%,#456);border-radius:6px}
+.game-info{flex:1}
+.game-info h2{margin:0 0 6px 0}
+.actions{margin-top:8px;display:flex;gap:8px}
+button{cursor:pointer}
+#installBtn, #playBtn, .back-btn{
+  padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#00121a;font-weight:600
+}
+#playBtn[disabled]{opacity:0.5;cursor:not-allowed}
+.progress-wrap{position:relative;margin-top:10px;height:14px;background:rgba(255,255,255,0.03);border-radius:8px;overflow:hidden}
+.hidden{display:none}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),#7be0ff);transition:width 0.2s}
+.progress-text{position:absolute;right:8px;top:0;font-size:12px;color:var(--muted);line-height:14px;padding:0 4px}
+
+.main-area{flex:1}
+.welcome{background:var(--card);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.game-container{background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.game-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.back-btn{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px}
+canvas{display:block;background:#000;border-radius:6px;width:100%;max-width:100%;height:auto;border:1px solid rgba(255,255,255,0.03)}
+.game-instructions{color:var(--muted);margin-top:8px}
+
+.footer{padding:12px 20px;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,0.02)}

@@ -1,0 +1,4 @@
+/* icons.css — простые SVG иконки как фон */
+.icon-play{width:16px;height:16px;display:inline-block;background-repeat:no-repeat;background-position:center}
+.icon-play{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M8 5v14l11-7z"/></svg>')}
+.icon-install{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M12 2v10l4-4 1.4 1.4L12 16 6.6 9.4 8 8l4 4V2z"/></svg>')}

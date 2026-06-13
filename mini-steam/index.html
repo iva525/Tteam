@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniSteam — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional modules (place these files in the same folder and uncomment to enable) -->
+  <!--
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="buttons.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="game-ui.css" />
+  -->
+</head>
+<body>
+  <header class="topbar">
+    <h1>MiniSteam</h1>
+    <nav>
+      <button class="nav-btn active">Library</button>
+      <button class="nav-btn">Store</button>
+      <button class="nav-btn">Community</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <div class="game-card selected">
+        <img src="" alt="" class="game-cover" />
+        <div class="game-info">
+          <h2>Fake Shooter</h2>
+          <p>Мини‑демо: стрелялка в браузере. Бесплатно. Никакой установки — имитация.</p>
+          <div class="actions">
+            <button id="installBtn">Install</button>
+            <button id="playBtn" disabled>Play</button>
+          </div>
+          <div id="progressWrap" class="progress-wrap hidden">
+            <div id="progressBar" class="progress-bar"></div>
+            <div id="progressText" class="progress-text">0%</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="main-area">
+      <div id="welcome" class="welcome">
+        <h2>Добро пожаловать в библиотеку</h2>
+        <p>Выберите игру и нажмите «Install», чтобы увидеть имитацию установки, затем «Play» — чтобы играть прямо в браузере.</p>
+      </div>
+
+      <div id="gameContainer" class="game-container hidden">
+        <div class="game-header">
+          <button id="backBtn" class="back-btn">← Back to Library</button>
+          <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="640" height="360"></canvas>
+        <div class="game-instructions">
+          Клавиши: ← → — движение, Пробел — выстрел. Нажмите R для перезапуска после поражения.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Это демонстрация — игра запускается в браузере, установка имитируется.
+  </footer>
+
+  <!-- Optional scripts (uncomment to enable modules) -->
+  <!--
+  <script src="input.js"></script>
+  <script src="audio.js"></script>
+  <script src="enemyAI.js"></script>
+  <script src="save.js"></script>
+  <script src="ui.js"></script>
+  -->
+  <script src="game.js"></script>
+</body>
+</html>
